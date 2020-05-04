@@ -13,5 +13,5 @@ Singleton& Singleton::GetInstance(){
 }
 
 void Singleton::PrintAddress(){
-        std::cout << "address : " << (int)this << std::endl;
+        std::cout << "address : " << (void*)this << std::endl;
 }

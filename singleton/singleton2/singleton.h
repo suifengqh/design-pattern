@@ -13,7 +13,7 @@ public:
 
         ~Singleton() = default;
 
-private::
+private:
         Singleton() = default;
         Singleton(const Singleton&) = delete;
         Singleton& operator=(const Singleton&) = delete;
