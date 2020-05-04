@@ -9,11 +9,10 @@ void ConcreteSubject::Request(){
         std::cout << "concrete subject request." << std::endl;
 }
 
-Proxy::Proxy(Subject* sub){
-        m_subject = sub;
-}
+Proxy::Proxy() : m_subject(new ConcreteSubject){}
 
 Proxy::~Proxy(){
+        std::cout << "delete a proxy." << std::endl;
         if(m_subject){
                 delete m_subject;
                 m_subject = NULL;

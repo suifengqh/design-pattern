@@ -4,9 +4,9 @@
 class Prototype{
 public:
         virtual Prototype* clone() = 0;
-        virtual ~Prototype() = 0;
-        void Increase(int t) = 0;
-        int GetCounter() = 0;
+        virtual ~Prototype() = 0 {};
+        virtual void Increase(int t) = 0;
+        virtual int GetCounter() = 0;
 };
 
 class ConcretePrototype : public Prototype{

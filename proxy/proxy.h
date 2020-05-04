@@ -3,8 +3,8 @@
 
 class Subject{
 public:
-        virtual ~Subject() = 0;
-        void Request() = 0 {};
+        virtual ~Subject() = 0 {};
+        virtual void Request() = 0;
 };
 
 class ConcreteSubject : public Subject{
@@ -15,7 +15,7 @@ public:
 
 class Proxy{
 public:
-        Proxy(Subject* sub);
+        Proxy();
         ~Proxy();
         void Request();
 private:
