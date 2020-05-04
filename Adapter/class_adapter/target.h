@@ -8,6 +8,7 @@ public:
         virtual void Request(){
                 std::cout << "Target Request" << std::endl;
         }
+        virtual ~Target() {}
 };
 
 #endif

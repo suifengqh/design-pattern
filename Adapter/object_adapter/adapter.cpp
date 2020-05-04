@@ -2,6 +2,7 @@
 #include <iostream>
 
 Adapter::~Adapter(){
+        std::cout << "delete adapter" << std::endl;
         if(m_adaptee){
                 delete m_adaptee;
                 m_adaptee = NULL;

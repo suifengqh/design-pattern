@@ -6,11 +6,11 @@
 
 class Adapter : public Target{
 public:
-        Adapter() : m_adaptee(new Adapterr){}
+        Adapter() : m_adaptee(new Adaptee){}
         ~Adapter();
         void Request();
 private:
         Adaptee* m_adaptee;
-}
+};
 
 #endif

@@ -4,3 +4,7 @@
 void Adapter::Request(){
         Adaptee::SpecificRequest();
 }
+
+Adapter::~Adapter() {
+	std::cout << "delete adapter" << std::endl;
+}

@@ -7,6 +7,7 @@
 class Adapter : public Target, public Adaptee{
 public:
         void Request();
-}
+        ~Adapter();
+};
 
 #endif
