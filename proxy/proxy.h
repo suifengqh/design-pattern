@@ -4,7 +4,7 @@
 class Subject{
 public:
         virtual ~Subject() = 0;
-        void Request() = 0;
+        void Request() = 0 {};
 };
 
 class ConcreteSubject : public Subject{

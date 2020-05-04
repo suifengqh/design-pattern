@@ -11,7 +11,7 @@ typedef enum StrategyType
 class Strategy{
 public:
 	virtual void AlgorithmInterface() = 0;
-	virtual ~Strategy() = 0;
+	virtual ~Strategy() = 0 {};
 };
 
 class ConcreteStrategyA : public Strategy{
