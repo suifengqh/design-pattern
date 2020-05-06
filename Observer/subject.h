@@ -11,7 +11,7 @@ public:
         virtual void Attach(Observer* ob) = 0;
         virtual void Detach(Observer* ob) = 0;
         virtual void Notify() = 0;
-	virtual ~Subject() = 0 {};
+	virtual ~Subject() = 0;
 };
 
 class ConcreteSubject : public Subject{

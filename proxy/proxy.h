@@ -3,7 +3,7 @@
 
 class Subject{
 public:
-        virtual ~Subject() = 0 {};
+        virtual ~Subject() = 0;
         virtual void Request() = 0;
 };
 

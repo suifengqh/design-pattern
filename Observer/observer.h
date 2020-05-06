@@ -9,7 +9,7 @@ class Subject;
 class Observer{
 public:
         virtual void Update(int) = 0;
-	virtual ~Observer() = 0 {};
+	virtual ~Observer() = 0;
 };
 
 class ConcreteObserver : public Observer {

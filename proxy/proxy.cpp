@@ -1,6 +1,8 @@
 #include "proxy.h"
 #include <iostream>
 
+Subject::~Subject(){}
+
 ConcreteSubject::~ConcreteSubject(){
         std::cout << "delete a concrete subject." << std::endl;
 }

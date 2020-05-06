@@ -2,6 +2,8 @@
 #include "observer.h"
 #include <iostream>
 
+Subject::~Subject(){}
+
 void ConcreteSubject::Attach(Observer* ob){
         m_ObserverList.push_back(ob);
 }

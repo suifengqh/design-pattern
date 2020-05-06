@@ -1,6 +1,8 @@
 #include "prototype.h"
 #include <iostream>
 
+Prototype::~Prototype(){}
+
 ConcretePrototype::ConcretePrototype(const ConcretePrototype& right){
         m_counter = right.m_counter;
 }
