@@ -1,5 +1,8 @@
 #include "strategy.h"
+#include "strategyfactory.h"
 #include <iostream>
+
+Strategy::~Strategy(){}
 
 void ConcreteStrategyA::AlgorithmInterface(){
         std::cout << "I am from ConcreteStrategyA." << std::endl;
@@ -25,25 +28,10 @@ ConcreteStrategyC::~ConcreteStrategyC(){
         std::cout << "delete StrategyC" <<std::endl;
 }
 
-Context::Context(STRATEGYTYPE strategyType){
-        switch (strategyType)
-        {
-        case StrategyA:
-                pStrategy = new ConcreteStrategyA;
-                break;
-
-        case StrategyB:
-                pStrategy = new ConcreteStrategyB;
-                break;
-
-        case StrategyC:
-                pStrategy = new ConcreteStrategyC;
-                break;
-
-        default:
-                pStrategy = NULL;
-                break;
-        }       
+Context::Context(StrategyFactory* strategy_factory){
+	if(strategy_factory){
+		pStrategy = strategy_factory->GetStrategy();
+	}
 }
 
 Context::~Context(){
