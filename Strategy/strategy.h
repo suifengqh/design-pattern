@@ -3,13 +3,6 @@
 
 class StrategyFactory;
 
-typedef enum StrategyType
-{
-        StrategyA,
-	StrategyB,
-	StrategyC
-}STRATEGYTYPE;
-
 class Strategy{
 public:
 	virtual void AlgorithmInterface() = 0;
